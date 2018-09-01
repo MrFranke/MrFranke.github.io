@@ -10,9 +10,16 @@ body {
 	transition: background-color .5s ease;
 }
 
+a {
+	color: deepskyblue;
+}
+
+a:visited {
+	color: aqua;
+}
+
 :root {
 	/*Spinner*/
-	--spinner-start-size: 20px;
 	--spinner-end-size: 60px;
 	--spinner-animation-time: 1.3s;
 	--spinner-border: 2px solid #fff;
@@ -28,70 +35,18 @@ body {
 	font-family: 'Droid Sans Mono', monospace;
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	padding: 100px 0 70px;
 }
 
-/*
-.hello-window__link {
-	transform: rotateZ(-45deg) translate(calc(-50% - 20px));
-}
-.hello-window__link::before {
-	transform: rotateZ(179deg) translate(29px, 28px);
-}
-.hello-window__link::after {
-	transform: rotateZ(-181deg) translate(-29px, -26px);
-}
-*/
-
-.hello-window__link {
-	position: absolute;
-	bottom: 15%;
-	left: 50%;
-	/*transform: rotateZ(40deg) translate(calc(-50% - 20px));*/
-	transform: rotateZ(-45deg) translate(calc(-50% - 20px));
-	border-right: 2px solid;
-	border-top: 2px solid;
-	width: 30px;
-	height: 30px;
-	display: flex;
-	color: #fff;
-	justify-content: center;
-	align-items: center;
-}
-.hello-window__link::before {
-	content: '';
-	border-right: 2px solid;
-	border-top: 2px solid;
-	width: 100%;
-	height: 100%;
-	display: block;
-	color: #fff;
-	bottom: 15%;
-	/*transform: translate(-13px, 13px);*/
-	transform: rotateZ(179deg) translate(29px, 28px);
-	position: absolute;
-	top: -2px;
-}
-.hello-window__link::after {
-	content: '';
-	border-right: 2px solid;
-	border-top: 2px solid;
-	width: 100%;
-	height: 100%;
-	display: block;
-	color: #fff;
-	bottom: 15%;
-	/*transform: translate(-6px, 6px);*/
-	transform: rotateZ(-181deg) translate(-29px, -30px);
-	position: absolute;
-	top: -2px;
-}
 
 .hello-window__wrapper {
 	font-size: 0;
 	overflow: hidden;
 	width: 100%;
+	min-height: 50px;
 }
 
 .hello-window__wrapper > * {
@@ -100,6 +55,14 @@ body {
 
 .typing-carosel__cursore {
 	animation: cursor-blink .5s linear .5s infinite alternate;
+}
+
+.contacts {
+	padding: 0;
+}
+
+.contacts li {
+	list-style: none;
 }
 
 .blackout{

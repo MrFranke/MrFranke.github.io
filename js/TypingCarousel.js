@@ -25,8 +25,8 @@ class TypingCarousel {
 
 	doType() {
 		const prevText = this.props.texts[this.textCounter - 1] || '';
-		let text = this.props.texts[this.textCounter];
-		text = text.slice(prevText.length - text.length);
+        let text = this.props.texts[this.textCounter];
+        text = text.slice(prevText.length - text.length);
 
 		text.split('').forEach((letter, i) => {
 			setTimeout(() => {
