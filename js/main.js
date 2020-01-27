@@ -14,13 +14,13 @@
 
 	window.onload = () => {
 		const helloText = new TypingCarousel(document.querySelector('.hello-window__wrapper'), {
-			texts: [  `Hi! My name is Franke. I'm front-end`,
-								`Hi! My name is Franke. I'm `,
-								`Hi! My name is Franke. I'm back-end`,
-								`Hi! My name is Franke. I'm `,
-								`Hi! My name is Franke. I'm UX`,
-								`Hi! My name is Franke. I'm `,
-								`Hi! My name is Franke. I'm developer.`]
+			texts: [  `Hi! My name is Mike. I'm front-end`,
+				`Hi! My name is Mike. I'm `,
+				`Hi! My name is Mike. I'm back-end`,
+				`Hi! My name is Mike. I'm `,
+				`Hi! My name is Mike. I'm UX`,
+				`Hi! My name is Mike. I'm `,
+				`Hi! My name is Mike. I'm developer.`]
 		});
 		setTimeout(() => {
 			hideLoading(helloText);
